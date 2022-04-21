@@ -12,6 +12,9 @@ $main-white: #ffffff;
     padding: 0;
     box-sizing: border-box;
 }
+a {
+    text-decoration: none;
+}
 body {
     margin: 0;
     padding: 0;
@@ -45,7 +48,7 @@ body {
         border-color: $main-black;
     }
 
-    &.panel__nav {
+    &.panel__nav, a {
         color: $main-black;
         background: $main-white;
     }
@@ -62,7 +65,7 @@ body {
         border-color: #eee;
     }
 
-    &.panel__nav {
+    &.panel__nav, a {
         color: $main-white;
         background: $main-black;
     }
@@ -261,6 +264,7 @@ h1 {
 .show-all .panel__zoom {
     pointer-events: none;
 }
+
 .panel__nav {
     cursor: pointer;
     opacity: .2;
@@ -325,6 +329,7 @@ h1 {
 	position: absolute;
 	top: 50%;
 	transform: translateX(-50%) translateY(-50%) translateY(14vmin);
+
 	span {
 		cursor: pointer;
 		display: inline-block;
