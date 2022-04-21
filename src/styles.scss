@@ -6,6 +6,8 @@ $purpul-color: #7D3BED;
 $main-black: #282a2d;
 $main-white: #ffffff;
 
+$mobile: 600px;
+
 
 * {
     margin: 0;
@@ -161,6 +163,10 @@ body {
 h1 {
     font-size: 20vmin;
     margin: 0;
+
+    @media (max-width: $mobile) {
+        font-size: 12vmin;
+    }
 }
 .panel-wrap {
     height: 100vh;
@@ -301,7 +307,7 @@ h1 {
     }
     &--left {
         left: 1rem;
-        top: 50%;
+        top: 45%;
         transform: translateY(-50%) rotate(-90deg) translateX(-100%);
         transform-origin: top left;
 
@@ -316,7 +322,7 @@ h1 {
     }
     &--right {
         right: 1rem;
-        top: 50%;
+        top: 45%;
         transform: translateY(-50%) rotate(90deg) translateX(100%);
         transform-origin: top right;
 
