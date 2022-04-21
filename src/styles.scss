@@ -43,14 +43,18 @@ body {
     background: $main-white;
     color: $main-black;
 
-    &.theme-btn {
+    .theme-btn {
         color: $main-black;
         border-color: $main-black;
     }
 
-    &.panel__nav, a {
+    .panel__nav {
         color: $main-black;
         background: $main-white;
+
+        &.active {
+            opacity: 1;
+        }
     }
 }
 
@@ -60,14 +64,18 @@ body {
     background: $main-black;
     color: $main-white;
 
-    &.theme-btn {
-        color: #eee;
-        border-color: #eee;
+    .theme-btn {
+        color: $main-white;
+        border-color: $main-white;
     }
 
-    &.panel__nav, a {
+    .panel__nav {
         color: $main-white;
         background: $main-black;
+
+        &.active {
+            opacity: 1;
+        }
     }
 }
 
@@ -88,6 +96,7 @@ body {
     outline: none;
     white-space: nowrap;
     user-select: none;
+    opacity: .2;
 }
 
 
@@ -279,6 +288,10 @@ h1 {
 
     &:hover {
         opacity: 1;
+    }
+
+    &--center {
+        border: none;
     }
 
     &--up {

@@ -1,20 +1,15 @@
 
 
-<div class="site-wrap dark-theme">
-    <div class="panel" data-x-pos="0"  data-y-pos="0">
+<div class="site-wrap">
+    <div class="panel light-theme" data-x-pos="0"  data-y-pos="0">
 
 
         <nav class="menu">
-            <!-- <span class="panel__nav panel__nav--up js-up">ABOUT</span>
-            <span class="panel__nav panel__nav--left js-left">SKILLS</span>
-            <span class="panel__nav panel__nav--right js-right">WORKS</span>
-            <span class="panel__nav panel__nav--down js-down">CONTACTS</span> -->
-
-            <a class="panel__nav panel__nav--up js-up" [routerLink]="['/about']">ABOUT</a>
-            <a class="panel__nav panel__nav--left js-left" href="/slills">SKILLS</a>
-            <a class="panel__nav panel__nav--right js-right" href="/works">WORKS</a>
-            <a class="panel__nav panel__nav--down js-down" href="/contacts">CONTACTS</a>
-            <a class="panel__zoom js-zoom" href="/main">Main</a>
+            <a class="panel__nav panel__nav--up js-up" routerLinkActive="active" routerLink="/about">ABOUT</a>
+            <a class="panel__nav panel__nav--left js-left" routerLinkActive="active" routerLink="/slills">SKILLS</a>
+            <a class="panel__nav panel__nav--right js-right" routerLinkActive="active" routerLink="/works">WORKS</a>
+            <a class="panel__nav panel__nav--down js-down" routerLinkActive="active" routerLink="/contacts">CONTACTS</a>
+            <a class="panel__nav panel__nav--center panel__zoom js-zoom" routerLinkActive="active" routerLink="/main">Main</a>
 
             <!-- <span class="panel__zoom js-zoom">View All</span> -->
         </nav>
