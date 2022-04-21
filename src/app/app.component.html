@@ -1,75 +1,53 @@
-<router-outlet></router-outlet>
+
 
 <div class="site-wrap">
-  <app-about></app-about>
-  <app-contacts></app-contacts>
-  <app-skills></app-skills>
-  <app-works></app-works>
-</div>
-
-  
+    <div class="panel" data-x-pos="0"  data-y-pos="0">
 
 
+        <nav class="menu">
+            <span class="panel__nav panel__nav--up js-up">ABOUT</span>
+            <span class="panel__nav panel__nav--left js-left">SKILLS</span>
+            <span class="panel__nav panel__nav--right js-right">WORKS</span>
+            <span class="panel__nav panel__nav--down js-down">CONTACTS</span>
+            <span class="panel__zoom js-zoom">View All</span>
+        </nav>
+        
+        <router-outlet></router-outlet>
 
-
-
-<div class="panel-wrap animate--tilt">
-  
-  <div class="panel" data-x-pos="0"  data-y-pos="0">
-      <nav class="menu">
-          <span class="panel__nav panel__nav--up js-up">ABOUT</span>
-          <span class="panel__nav panel__nav--left js-left">SKILLS</span>
-          <span class="panel__nav panel__nav--right js-right">WORKS</span>
-          <span class="panel__nav panel__nav--down js-down">CONTACTS</span>
-          <span class="panel__zoom js-zoom">View All</span>
-      </nav>
-      <div class="page-descrp">
-          <h1>Main</h1>
-      </div>
-
-      <button class="theme-btn">Switch to <span class="theme-type">Light</span> Theme</button>
-
-      <!--crowed canvas-->
-      <canvas id="canvas"></canvas>
-
-      <!-- social -->
-           <!-- <div class="homeSocial">
-               <a href="#" target="_blank" title="My Instagram">
-                   <i class="fa fa-instagram fa-2x fa-fw"></i>
-               <a href="https://github.com/AlexandrKarpovich" target="_blank" title="My GitHub" id="profile-link">
-                   <i class="fa fa-github fa-2x fa-fw" ></i></a>
-            </div> -->
-
-
-
-  </div>
-  <div class="panel" data-x-pos="0"  data-y-pos="1">
-      <span class="panel__nav panel__nav--left js-down js-left">SKILLS</span>
-      <span class="panel__nav panel__nav--right js-down js-right">WORKS</span>
-      <span class="panel__nav panel__nav--down js-down">Main</span>
-      <span class="panel__zoom js-zoom">View All</span>
-      <h1>ABOUT</h1>
-  </div>
-  <div class="panel" data-x-pos="-1"  data-y-pos="0">
-      <span class="panel__nav panel__nav--up js-right js-up">ABOUT</span>
-      <span class="panel__nav panel__nav--right js-right">WORKS</span>
-      <span class="panel__nav panel__nav--down js-right js-down">CONTACTS</span>
-      <span class="panel__zoom js-zoom">View All</span>
-      <h1>SKILLS</h1>
-  </div>
-  <div class="panel" data-x-pos="1"  data-y-pos="0">
-      <span class="panel__nav panel__nav--up js-left js-up">ABOUT</span>
-      <span class="panel__nav panel__nav--left js-left">SKILLS</span>
-      <span class="panel__nav panel__nav--down js-left js-down">CONTACTS</span>
-      <span class="panel__zoom js-zoom">View All</span>
-      <h1>WORKS</h1>
-
-  </div>
-  <div class="panel" data-x-pos="0"  data-y-pos="-1">
-      <span class="panel__nav panel__nav--up js-up">Main</span>
-      <span class="panel__nav panel__nav--left js-up js-left">SKILLS</span>
-      <span class="panel__nav panel__nav--right js-up js-right">WORKS</span>
-      <span class="panel__zoom js-zoom">View All</span>
-      <h1>CONTACTS</h1>
-  </div>
+        <button class="theme-btn">Switch to <span class="theme-type">Light</span> Theme</button>
+    
+    
+        <!-- <div class="panel-wrap animate--tilt">
+            <div class="panel" data-x-pos="0"  data-y-pos="1">
+                <span class="panel__nav panel__nav--left js-down js-left">SKILLS</span>
+                <span class="panel__nav panel__nav--right js-down js-right">WORKS</span>
+                <span class="panel__nav panel__nav--down js-down">Main</span>
+                <span class="panel__zoom js-zoom">View All</span>
+                <h1>ABOUT</h1>
+            </div>
+            <div class="panel" data-x-pos="-1"  data-y-pos="0">
+                <span class="panel__nav panel__nav--up js-right js-up">ABOUT</span>
+                <span class="panel__nav panel__nav--right js-right">WORKS</span>
+                <span class="panel__nav panel__nav--down js-right js-down">CONTACTS</span>
+                <span class="panel__zoom js-zoom">View All</span>
+                <h1>SKILLS</h1>
+            </div>
+            <div class="panel" data-x-pos="1"  data-y-pos="0">
+                <span class="panel__nav panel__nav--up js-left js-up">ABOUT</span>
+                <span class="panel__nav panel__nav--left js-left">SKILLS</span>
+                <span class="panel__nav panel__nav--down js-left js-down">CONTACTS</span>
+                <span class="panel__zoom js-zoom">View All</span>
+                <h1>WORKS</h1>
+          
+            </div>
+            <div class="panel" data-x-pos="0"  data-y-pos="-1">
+                <span class="panel__nav panel__nav--up js-up">Main</span>
+                <span class="panel__nav panel__nav--left js-up js-left">SKILLS</span>
+                <span class="panel__nav panel__nav--right js-up js-right">WORKS</span>
+                <span class="panel__zoom js-zoom">View All</span>
+                <h1>CONTACTS</h1>
+            </div>
+        </div> -->
+    
+    </div>
 </div>
