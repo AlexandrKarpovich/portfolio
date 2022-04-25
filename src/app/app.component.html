@@ -1,7 +1,7 @@
 
 
 <div class="site-wrap">
-    <div class="panel light-theme" data-x-pos="0"  data-y-pos="0">
+    <div class="panel animate--tilt" data-x-pos="0"  data-y-pos="0">
 
 
         <nav class="menu">
@@ -13,12 +13,23 @@
 
             <!-- <span class="panel__zoom js-zoom">View All</span> -->
         </nav>
-        
+
         <router-outlet></router-outlet>
 
-        <button class="theme-btn">Switch to <span class="theme-type">Light</span> Theme</button>
-    
-    
+        <!-- <button class="theme-btn">{{theme}}</button> -->
+
+
+        <!-- <div class="toggle-switch">
+            <label>
+                <input type="checkbox">
+                <span class="slider-theme"></span>
+            </label>
+        </div> -->
+
+        <mat-slide-toggle (click)="toggleDarkMode()" [(ngModel)]="isDarkMode">Dark theme</mat-slide-toggle>
+
+
+
         <!-- <div class="panel-wrap animate--tilt">
             <div class="panel" data-x-pos="0"  data-y-pos="1">
                 <span class="panel__nav panel__nav--left js-down js-left">SKILLS</span>
@@ -40,7 +51,7 @@
                 <span class="panel__nav panel__nav--down js-left js-down">CONTACTS</span>
                 <span class="panel__zoom js-zoom">View All</span>
                 <h1>WORKS</h1>
-          
+
             </div>
             <div class="panel" data-x-pos="0"  data-y-pos="-1">
                 <span class="panel__nav panel__nav--up js-up">Main</span>
@@ -50,6 +61,6 @@
                 <h1>CONTACTS</h1>
             </div>
         </div> -->
-    
+
     </div>
 </div>
