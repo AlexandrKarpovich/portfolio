@@ -34,7 +34,7 @@ export class ThemeService {
   }
 
   private getColorTheme() {
-    console.log(this.colorTheme);
+    // console.log(localStorage.getItem('user-theme'));
     // if (localStorage.getItem('user-theme')) {
     //   this.colorTheme = localStorage.getItem('user-theme');
     // } else {

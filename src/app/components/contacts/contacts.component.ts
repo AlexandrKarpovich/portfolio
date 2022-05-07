@@ -1,17 +1,29 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-contacts',
   templateUrl: './contacts.component.html',
   styleUrls: ['./contacts.component.scss']
 })
-export class ContactsComponent implements OnInit {
+
+
+export class ContactsComponent {
 
   title = 'Contacts'
+  
+constructor(private formBuilder:FormBuilder){}
 
-  constructor() { }
+ profileForm = this.formBuilder.group({
+   firstName:[''],
+   lastName:[''],
+   address:[''],
+   dob:[''],
+   gender:['']
+ });
 
-  ngOnInit(): void {
-  }
+ saveForm(){
+   console.log('Form data is ', this.profileForm.value);
+ }
 
 }
